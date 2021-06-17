@@ -5,11 +5,13 @@ import { Route } from "react-router";
 import ProductDetail from "../pages/ProductDetail";
 import CartDetail from "../pages/CartDetail";
 import { Grid } from "semantic-ui-react";
+import { ToastContainer } from "react-toastify";
 
 export default function CartSummary() {
   return (
     <div>
      <Grid>
+     <ToastContainer position="bottom-right"/>
         <Grid.Row>
           <Grid.Column width={4}>
             <Categories></Categories>
