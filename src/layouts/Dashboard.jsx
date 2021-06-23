@@ -6,6 +6,7 @@ import ProductDetail from "../pages/ProductDetail";
 import CartDetail from "../pages/CartDetail";
 import { Grid } from "semantic-ui-react";
 import { ToastContainer } from "react-toastify";
+import ProductAdd from "../pages/ProductAdd";
 
 export default function CartSummary() {
   return (
@@ -21,6 +22,8 @@ export default function CartSummary() {
             <Route exact path="/products" component={ProductList} />
             <Route path="/products/:name" component={ProductDetail} />
             <Route path="/cart" component={CartDetail} />
+            <Route path="/productadd" component={ProductAdd} />
+
           </Grid.Column>
         </Grid.Row>
       </Grid>
